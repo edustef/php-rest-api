@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  web:
+    image: mattrayner/lamp:latest
+    ports: 
+      - 80:80
+    volumes:
+      - .:/app
+      - /mnt/c/mysql:/var/lib/mysql
+    
